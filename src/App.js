@@ -9,7 +9,7 @@ import CartPage from './Pages/CartPage'
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className='bg-slate-900'>
         <NavBar />
       </div>
       <Routes>
