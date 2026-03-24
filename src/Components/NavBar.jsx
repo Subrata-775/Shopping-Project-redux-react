@@ -16,6 +16,14 @@ function NavBar({ item }) {
 
                 />
             </NavLink>
+            <NavLink to="/">
+                <div className="hidden  md:block text-xl md:text-2xl font-semibold 
+                  text-white tracking-wide
+                  hover:text-blue-300 transition duration-200">
+                    Shopping Website
+                </div>
+            </NavLink>
+
 
             <div className='flex  font-medium text-slate-100 items-center mr-5 space-x-6'>
                 <NavLink to='/'>

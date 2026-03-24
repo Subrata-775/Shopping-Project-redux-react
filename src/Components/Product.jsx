@@ -20,7 +20,8 @@ function Product({ post }) {
     }
 
     return (
-        <div className='flex flex-col items-center justify-between gap-3 p-4 mt-10 ml-5 rounded-xl  
+        <div className='h-fit bg-white shadow-lg rounded-xl flex flex-col items-center
+         justify-between gap-3 p-4 mt-10 ml-5   
         hover:scale-110 transition duration-300 ease-in hover:shadow-2xl hover:duration-300  '>
             <div className='text-gray-700 font-semibold text-lg  text-left truncate w-40 mt-1 '>
                 <p>{post.title.split(" ").slice(0, 5).join(" ") + "..."}</p>
