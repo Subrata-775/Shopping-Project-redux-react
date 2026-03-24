@@ -4,18 +4,24 @@ import { TiShoppingCart } from "react-icons/ti";
 
 function NavBar() {
     return (
-        <div className='flex flex-row justify-around items-center max-h-[100px] w-screen bg-blue-700'>
+        <div className='flex justify-around items-center max-h-[100px] w-screen bg-blue-700 text-white'>
+
             <NavLink to='/'>
-                <div>
-                    <img height="100px" width='100px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqTQJX9FG_WvQ8dkblbtqNQWOOTZUlO94iQ&s' />
-                </div>
+                <img
+                    height="80px"
+                    width="80px"
+                    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqTQJX9FG_WvQ8dkblbtqNQWOOTZUlO94iQ&s'
+                    alt="logo"
+                />
             </NavLink>
-            <div className='flex flex-row justify-around items-center'>
+
+            <div className='flex gap-6 items-center'>
                 <NavLink to='/'>
                     <p>Home</p>
                 </NavLink>
+
                 <NavLink to='/cart'>
-                    <TiShoppingCart />
+                    <TiShoppingCart size={28} />
                 </NavLink>
             </div>
 
@@ -23,4 +29,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBar;

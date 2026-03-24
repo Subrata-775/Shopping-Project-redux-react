@@ -12,11 +12,11 @@ function Product({ post }) {
     const dispatch = useDispatch();
     const removeFromCart = () => {
         dispatch(removeItems(post.id))
-        toast("Item Remove From Cart")
+        toast.error("Item Remove From Cart")
     }
     const addToCart = () => {
         dispatch(addItems(post))
-        toast("Item Add To Cart")
+        toast.success("Item Add To Cart")
     }
 
     return (

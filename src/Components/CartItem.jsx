@@ -9,7 +9,7 @@ function CartItem({ item, itemIndex }) {
 
     const itemRemove = () => {
         dispatch(removeItems(item.id))
-        toast.success("Item Removed.")
+        toast.error("Item Removed.")
     }
     return (
         <div className='flex justify-between items-center'>
