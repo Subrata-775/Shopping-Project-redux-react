@@ -1,7 +1,7 @@
-import React from 'react'
+
 import { NavLink } from 'react-router-dom'
 import { TiShoppingCart } from "react-icons/ti";
-import { useDispatch, useSelector } from 'react-redux';
+import {useSelector } from 'react-redux';
 
 function NavBar({ item }) {
     const cart = useSelector((state) => state.Cart?.cart) || [];
